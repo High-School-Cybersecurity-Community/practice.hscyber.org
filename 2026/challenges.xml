@@ -1,0 +1,238 @@
+<ctf>
+<hash>
+  <t>5</t>
+  <m>1024</m>
+  <p>1</p>
+</hash>
+  <challenges>
+    <name>Dabba Doo Decoder</name>
+    <difficulty>Beginners</difficulty>
+    <category>osint</category>
+    <description><![CDATA[We intercepted a note left on a compromised server. It looks like a reference to something, but all we have is this string:
+```
+MHhEQUJCQUQwMDo5
+```
+The first half is a well-known number that's famous for reading like a word. The second half is just a position. Find what the number sounds like, follow it to its source, and bring back what sits at the given position.
+
+Flag format: `oo{...}`
+
+The flag is a single line of text, entirely lowercase, with spaces and punctuations replaced by underscores. For example, Hello, World. would become `oo{hello_world}`.]]></description>
+    <type>standard</type>
+    <flag><salt>8naUK+faNuACAw4n5VJxJkpGJPNH9cGIDMykL5iEBL0=</salt><hash>spB8pRdIqbCGU1yFIGGIMd43A5GTaeTuZU42XZ4hgpM=</hash></flag>
+    <hints><content>The wiki entry doesn't just give a meaning, it gives a name. Say that name out loud and think about what else it sounds like.</content></hints>
+    <hints><content>Count the lines carefully.</content></hints>
+    <hints><content>Theme Song of "The Flintstones"</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Signals from the Cosmos</name>
+    <difficulty>Medium</difficulty>
+    <category>forensics</category>
+    <description><![CDATA[High in the Bolivian altiplano, far from any human settlement, this photograph was taken on a night when the Milky Way burned brighter than usual.
+
+Aliens were there.
+
+They stood beneath that same sky, beside the illuminated rock, and left something behind for us to find. The image is not just a record of the stars. It is a deliberate message from visitors who walked that plateau and chose this moment to make contact.
+
+The transmission is hidden within the photograph. Recover it.
+
+Photo By Thomas Fuhrmann - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=91415426]]></description>
+    <type>standard</type>
+    <flag><salt>ESPOEbMg5YmYKNohgHLiXHm4KUISELzjB9gmXV09FKo=</salt><hash>ICE0SNFOSZdlWhjPdlJQkkJiZBWqmIoDYb96Y6U+cbQ=</hash></flag>
+    <files>/2026/files/cosmic-transmission.png</files>
+    <hints><content>Sometimes, what meets the eye is only a distraction from the underlying data layers.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>First Bytes</name>
+    <difficulty>Beginners</difficulty>
+    <category>forensics</category>
+    <description><![CDATA[A downloaded file won't open. Can you figure out why and recover the flag hidden behind it?]]></description>
+    <type>standard</type>
+        <flag><salt>gPwOBnJS1EsVJI2Zr9Rl6YbuFFhZkLB9pNptJZTvSGw=</salt><hash>7R49GfvEgSoi1QJTIYL+IRj9C2p4DMLp61Qi7KSwkjg=</hash></flag>
+    <files>/2026/files/downloaded.png</files>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Variant of an Ancient Cipher</name>
+    <difficulty>Easy</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[Can you decode the secret message?
+```
+ss!wlmjxcgmtlivwcevicmrwigyvi#
+```
+
+Flag format: `oo{...}`]]></description>
+    <type>standard</type>
+    <flag><salt>a59hwc3jy/HzW25U2drINEJlUteC/4LZgWidg/AT0u8=</salt><hash>0BvAQumPfiFxfXHp6iYdYZqmAOerbiZOWz/MZxfkb5w=</hash></flag>
+        <hints><content>Compare the fingerprints of flag format with the encoded message.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Small Key</name>
+    <difficulty>Easy</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[Something about this public key is seriously wrong... but can you figure out what?
+
+Your mission is to analyse the provided public key, identify its weakness, and exploit it to recover the private key parameters.
+
+Once you've broken the key, find the two prime numbers `p` and `q` used to generate the private key.
+
+Flag format: The absolute difference between the two primes, `p` and `q`, represented in hexadecimal, using uppercase letters.
+
+Flag: `oo{DIFFERENCE_IN_UPPERCASE_HEX}`
+
+Can you crack the key and uncover the hidden flag?]]></description>
+    <type>standard</type>
+    <flag><salt>jndKVZpSeE1J1aqjkcAk+K3dsaViZSCXhwVdXHBt0fI=</salt><hash>+80nV+htFfiP4B9akQ8VglTU6OdY4gyiymVjMIH0vik=</hash></flag>
+    <files>/2026/files/publickey.pem</files>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Passive Aggressive</name>
+    <difficulty>Medium</difficulty>
+    <category>forensics</category>
+    <description><![CDATA[A sysadmin fat-fingered their password, tried again, and then pulled a file off the office file server. We grabbed a short slice of traffic from the LAN while it happened, but it's buried in the everyday background noise of the rest of the network.
+
+Work out who actually got in, what their password was, and which file they downloaded.
+
+The flag format is `oo{username_password_word1_word2_word3}`, where the secret words come from the first line of the file.]]></description>
+    <type>standard</type>
+    <flag><salt>7F/n3re4Z2p6PtOG+er3LrY+LWmcyRU7N/ey7a1pVcw=</salt><hash>XTVoC3EaGpZYKDm5z9VISMAW6113WRtw6wYqf64B/Lo=</hash></flag>
+    <files>/2026/files/capture.pcap</files>
+    <hints><content>Some protocols never bothered with encryption. Try the ftp display filter.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Password Protected</name>
+    <difficulty>Easy</difficulty>
+    <category>rev</category>
+    <description><![CDATA[You've stumbled upon a mysterious executable guarding a secret behind a password prompt. The catch? Nobody knows the password, and the original developer has left no clues behind.
+
+Or have they?
+
+No source code. No hints. Just a binary and a secret waiting to be discovered.]]></description>
+    <type>standard</type>
+    <flag><salt>CvVx76epZpxusxmjsqXJrOkONUuxV87US6fvZPOuwu0=</salt><hash>ScDDnwUZao6zgUxThcG6zf2hWsfmNugMmeoI9+4utd8=</hash></flag>
+    <files>/2026/files/rev1/chall</files>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Keygen</name>
+    <difficulty>Medium</difficulty>
+    <category>rev</category>
+    <description><![CDATA[A program checks whether a supplied serial is valid. The original developer left behind an encoded sequence of integers.
+
+Your task is to reverse-engineer the validation logic and recover the correct serial.
+
+You may use Python to automate your analysis.
+No network access or external libraries are required.]]></description>
+    <type>standard</type>
+    <flag><salt>W+P+/FWMpxYs6l16odti8ebpJ2YzwFMI3KfEK7JqmsM=</salt><hash>sJW0XhoFJAV4M2eusSFd5PEnQAT2f3Vcid0oneqdoyg=</hash></flag>
+    <files>/2026/files/rev2/chall.py</files>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>AETHER Stream</name>
+    <difficulty>Hard</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[During the last pass of the rogue CubeSat AETHER-7 we captured a continuous encrypted downlink.
+
+The satellite is using a classic Linear Feedback Shift Register (LFSR) stream cipher (radiation-hardened hardware from the early 2000s).
+
+You are given three consecutive packets. The keystream is continuous across them (the LFSR never reseeds).
+
+* Packet 1 and Packet 2 have fully known plaintext (standard beacon + status frames that every AETHER satellite broadcasts).
+* Packet 3 contains the flag.
+
+Recover the flag.]]></description>
+    <type>standard</type>
+    <flag><salt>sGcbPX9L5CBqwnQVdZc7dMSxqfjY4t2kCy895FTOfhg=</salt><hash>7cuHWxknt6HalNz6L0DjTK1CFvViXlCXR0EmiKnuTeU=</hash></flag>
+    <files>/2026/files/intercepted.json</files>
+    <hints><content>The encryption is a pure stream cipher. XOR the known plaintexts with their corresponding ciphertexts. You will obtain a long consecutive keystream.</content></hints>
+    <hints><content>The keystream is generated by a single Linear Feedback Shift Register. Once you have enough consecutive keystream bits, the Berlekamp-Massey algorithm will recover both the length and the feedback polynomial.</content></hints>
+    <hints><content>You only need the linear recurrence relation. After recovering the connection polynomial, use the last L known keystream bits as a sliding window and generate the exact number of additional bits required for Packet 3.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Invalid URL</name>
+    <difficulty>Insane</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[```
+"EVERY DOOR HAS AN ADDRESS. NOT EVERY ADDRESS IS A URL."
+```
+
+Your mission: Decode the message, uncover the hidden destination, and find the page waiting on the other side.
+
+Flag format: `oo{...}`
+Note: You might need to use some forensic skills for this challenge.]]></description>
+    <type>standard</type>
+    <flag><salt>t3Z3aqlhnXqQUsd4pdjLFUHP6JuycfXktUhPnQni9m0=</salt><hash>NQitrAlH+DFGgJ7hMIy9ZPhDmtnmb+D57dU6Qe5C+lI=</hash></flag>
+    <files>/2026/files/qrcode.png</files>
+    <hints><content>The strange string may be encoded, not encrypted. Look for familiar encoding formats.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>A Shot in the Daylight</name>
+    <difficulty>Hard</difficulty>
+    <category>osint</category>
+    <description><![CDATA[A railfan stood at the end of a platform of a train station and caught a modern express thundering past. Your job is to work out exactly which train this was.
+
+Find the time the photo was taken (24-hour clock, local time), the service number of the train, the model of train, and the station the photographer was standing at.
+
+Careful: the code on the front of the train is not the service number. That code is like a licence plate, since it names one physical train set. The service number is the identifier the railway gives to a scheduled run, and it stays the same every day that run operates.
+
+Flag format: `oo{HH-MM_SERVICENUMBER_MODEL_STATION}`
+
+Example Flag **(not the answer)**: `oo{17-42_8431_XTRAPOLIS_FLINDERS_STREET_STATION}`
+
+
+* Everything in capitals, words separated by underscores
+* Remove all punctuations (hyphens, spaces, etc.) in the service number and the train model part of the flag, and replace spaces with underscore in the train station name.
+* The station always ends in _STATION
+* Time uses a hyphen]]></description>
+    <type>standard</type>
+    <flag><salt>BqmrrN3mGKFiQ0Y5CUJgE9WRMSfbtA3kBc1DwVb6h5Q=</salt><hash>VGKwo+qSe4jBuuFoD7n4Fw/RwNfJQD63xTEfvehgjc8=</hash></flag>
+    <files>/2026/files/train.jpg</files>
+    <hints><content>Check the capture date against Railwayâ€™s timetable</content></hints>
+    <hints><content>The answer isn't in the frame. Look beyond it.</content></hints>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Scrabble</name>
+    <difficulty>Beginners</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[```
+}!!DeSrEvEr{oo
+```]]></description>
+    <type>standard</type>
+    <flag><salt>8Irq3cDBB8z1q779NG5klblIrbAIbrd2ejgm4zSrBSI=</salt><hash>dGFYgCJcTo7JBSBr2xahu3N7qU2isqgm5nwcrbT3HGc=</hash></flag>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Hacker Text</name>
+    <difficulty>Beginners</difficulty>
+    <category>crypto</category>
+    <description><![CDATA[```
+00{Fr0m_L3375p34k_1337}
+```
+
+Convert this from the hacker-style text back to a normal version and submit that as the flag.]]></description>
+    <type>standard</type>
+    <flag><salt>/INWC0UU9JOfbXY+OUh3GAri77Jhu9yK2hAwiS1G2rc=</salt><hash>STWRIohCzm6XdZTmvsx7nRtxU56Jq0s4Kx/I73iPelg=</hash></flag>
+    <state>visible</state>
+  </challenges>
+  <challenges>
+    <name>Needle in the Codestack</name>
+    <difficulty>Beginners</difficulty>
+    <category>rev</category>
+    <description><![CDATA[You are given one Python file. Run it and it just asks for a flag. Inspect the source code and you'll find 11 things that all look like legitimate flags, but only one of them is actually checked against your guess.
+
+You do not have to test throuogh every single flags.]]></description>
+    <type>standard</type>
+    <flag><salt>ZgRu+6EushlD2cDcnuP8zsSHskwvQTvPRmxESvvQU8E=</salt><hash>uXOwpWmCH/aP9jwyuGlfw0aWRCyKIxXkHjkQHZ9tt/o=</hash></flag>
+    <files>/2026/files/rev3/chall.py</files>
+    <hints><content>what are the properties of XOR operation?</content></hints>
+    <state>visible</state>
+  </challenges>
+</ctf>

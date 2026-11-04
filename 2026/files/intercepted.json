@@ -1,0 +1,15 @@
+{
+  "description": "Continuous LFSR keystream across the three packets. Recover the flag from packet 3.",
+  "packet1": {
+    "ciphertext_hex": "ac4bda1579d036e20947bbb62d38d8380e1b12ab7d0d1007e3c783ab133f49721036af5e682010e0035b93bcd7fc",
+    "known_plaintext_hex": "414554484552377c424541434f4e7c4f4b7c5345513d303030317c4845414c54483d4e4f4d494e414c7ca89f6477"
+  },
+  "packet2": {
+    "ciphertext_hex": "9b192c0ad8c24fdb5049672288087b9944293c44d0386cdb912f57f20b7eb35f8f0adcc8a232894ccd30c2ec41096aaaf2d9751baade8a728f045a88",
+    "known_plaintext_hex": "414554484552377c5354415455537c5057523d39382e327c54454d503d32312e347c4241543d474f4f447c414e543d4c4f434b45447cd1c025b6b539"
+  },
+  "packet3": {
+    "ciphertext_hex": "ff2bce2c97ceab40246d5bb07c531bd3a722e4b77e800b9ad8bd2fa61e4385771b65ee869ae39427ce1e81697e2068",
+    "note": "This one contains the flag. No known plaintext."
+  }
+}
