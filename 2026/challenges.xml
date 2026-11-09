@@ -86,7 +86,7 @@ Can you crack the key and uncover the hidden flag?]]></description>
     <type>standard</type>
     <flag><salt>jndKVZpSeE1J1aqjkcAk+K3dsaViZSCXhwVdXHBt0fI=</salt><hash>+80nV+htFfiP4B9akQ8VglTU6OdY4gyiymVjMIH0vik=</hash></flag>
     <files>/2026/files/publickey.pem</files>
-    <state>visible</state>
+    <state>hidden</state>
   </challenges>
   <challenges>
     <name>Passive Aggressive</name>
